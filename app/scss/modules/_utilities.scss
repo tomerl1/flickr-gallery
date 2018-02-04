@@ -1,0 +1,14 @@
+.hidden {
+    display: none !important;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}

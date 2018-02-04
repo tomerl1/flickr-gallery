@@ -1,0 +1,12 @@
+.progressbar {
+    width: 100%;
+    height: 4px;
+    background: $color-flickrMain;
+
+    .progressbar-value {
+        width: 100%;
+        height: 4px;
+        background: $color-flickrSecond;
+        transition: transform 0.2s linear;
+    }
+}

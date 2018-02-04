@@ -1,0 +1,99 @@
+.flickr-gallery {
+    margin: 0 auto;
+
+    .gallery-row {
+        text-align: center;
+    }
+
+    .image-wrapper {
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+
+        .gallery-image {
+            box-sizing: border-box;
+            border: 5px solid #fff;
+            box-shadow: 0px 0px 8px -2px rgba($color: #000000, $alpha: 0.6);
+            overflow: hidden;
+            display: inline-block;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.2s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .image-author {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: #fff;
+            overflow: hidden;
+            max-width: 90%;
+
+            .image-author-inner {
+                transition: transform 0.2s ease-in-out;
+                transform: translate(-100%, 0);
+                background: rgba($color: #000000, $alpha: 0.6);
+                padding: 0 5px 0 2px;
+
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .image-date {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #fff;
+            overflow: hidden;
+            max-width: 90%;
+
+            .image-date-inner {
+                background: rgba($color: #000000, $alpha: 0.6);
+                transition: transform 0.2s ease-in-out;
+                transform: translate(0, -100%);
+                padding: 0 5px 0 2px;
+            }
+        }
+
+        &:hover {
+            .image-author-inner {
+                transform: translate(0, 0);
+            }
+
+            .image-date-inner {
+                transform: translate(0, 0);
+            }
+        }
+    }
+
+    &.touch {
+        .image-wrapper {
+            .gallery-image {
+                &:hover {
+                    img {
+                        transform: scale(1) !important;
+                    }
+                }
+            }
+
+            .image-author-inner {
+                transform: translate(0, 0) !important;
+            }
+
+            .image-date-inner {
+                transform: translate(0, 0) !important;
+            }
+        }
+    }
+}

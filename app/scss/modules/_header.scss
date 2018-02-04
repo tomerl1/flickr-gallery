@@ -1,0 +1,18 @@
+#header {
+    $row-height: 60px;
+
+    background-color: $color-bgHead;
+    height: $row-height;
+    color: #fff;    
+    
+    .container-header {
+        height: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        margin: 0;
+        height: $row-height;
+        line-height: $row-height;
+    }
+}

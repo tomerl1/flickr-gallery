@@ -1,0 +1,47 @@
+// Variables
+
+/**
+Colors
+*/
+$color-bgMain: #efefef;
+$color-bgHead: rgba(21,21,23,.95);
+$color-flickrMain: #1057ae;
+$color-flickrSecond: #FF0084;
+
+/**
+Fonts
+*/
+$font-main: 'Titillium Web', Arial, sans-serif;
+
+/**
+Grid
+*/
+$grid-gutter-width: 30px;
+$container-tablet: (720px + $grid-gutter-width);
+$container-sm: $container-tablet;
+$container-desktop: (940px + $grid-gutter-width);
+$container-md: $container-desktop;
+$container-large-desktop:  (1140px + $grid-gutter-width);
+$container-lg: $container-large-desktop;
+
+/**
+Media queries breakpoints
+*/
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+// Mixins
+@import '../mixins/all'; 
